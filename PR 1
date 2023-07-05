@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int t1, t2, t3;
+    printf("Введіть три значення: ");
+    scanf("%d %d %d", &t1, &t2, &t3);
+    float t = (float)(t1 + t2 + t3);
+    printf("Час , необхідний для з'їдання пирога  в годинах: %.2f", roundf(t * 100) / 100);
+    return 0;
+}
