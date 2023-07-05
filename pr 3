@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int r;
+    printf("Введіть кількість розрядів: ");
+    scanf("%d", &r);
+    int total = 2 * (pow(2, r) - 1);
+    int invalid = 2 * (r - 1) * (pow(2, r) - 3);
+    int valid = total - invalid;
+    printf("Кількість чисел із %d розрядами: %d", r, valid);
+    return 0;
+}
